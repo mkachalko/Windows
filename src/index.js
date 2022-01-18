@@ -10,3 +10,4 @@ slider({
   slideActive: "service-slide-active",
   timeInterval: 3000,
 });
+modal('a[href="#application"]', ".services-modal", ".overlay", ".services-modal__close");
