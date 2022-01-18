@@ -468,6 +468,12 @@ input.error {
 .service-ico:before {
   background-color: #fff;
 }
+.service-slide {
+  display: none;
+}
+.service-slide-active {
+  display: block;
+}
 .review-ico {
   background-position: -82px 0px;
 }

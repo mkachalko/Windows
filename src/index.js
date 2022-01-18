@@ -4,4 +4,9 @@ import slider from "./modules/slider";
 
 modal('a[href="#callback"]', ".header-modal", ".overlay", ".header-modal__close");
 swiper();
-slider();
+slider({
+  selSlider: ".service-slider",
+  selSlide: ".service-slide",
+  slideActive: "service-slide-active",
+  timeInterval: 3000,
+});
