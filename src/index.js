@@ -12,4 +12,5 @@ slider({
   timeInterval: 3000,
 });
 modal('a[href="#application"]', ".services-modal", ".overlay", ".services-modal__close");
-timer("23 febryary 2022");
+timer("23 febryary 2022", "order_1");
+timer("23 febryary 2022", "order_2");

@@ -1,8 +1,9 @@
-const timer = (deadline) => {
-  const timerDays = document.getElementById("count-days");
-  const timerHours = document.getElementById("count-hours");
-  const timerMinutes = document.getElementById("count-minutes");
-  const timerSeconds = document.getElementById("count-seconds");
+const timer = (deadline, blockID) => {
+  const timerBlock = document.getElementById(blockID);
+  const timerDays = timerBlock.querySelector(".count-days");
+  const timerHours = timerBlock.querySelector(".count-hours");
+  const timerMinutes = timerBlock.querySelector(".count-minutes");
+  const timerSeconds = timerBlock.querySelector(".count-seconds");
 
   let interval;
 
