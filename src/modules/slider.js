@@ -32,7 +32,8 @@ const slider = ({ selSlider, selSlide, slideActive, timeInterval = 1500 }) => {
     } else {
       prevSlide(slides, current, slideActive);
       if (current - 1 < 0) {
-        prevSlide(slides, slides.length - 1, slideActive);
+        current++;
+        prevSlide(slides, current, slideActive);
       } else {
         prevSlide(slides, current - 1, slideActive);
       }
