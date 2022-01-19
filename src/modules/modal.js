@@ -35,16 +35,16 @@ const modal = (selOpenBtn, selModal, selOverlay, selCloseBtn) => {
           modal.style.opacity = progress;
           overlay.style.opacity = progress;
           if (overlay.style.opacity == 0) {
-            modal.style.display = "";
-            overlay.style.display = "";
+            modal.style.display = "none";
+            overlay.style.display = "none";
             modal.style.opacity = "";
             overlay.style.opacity = "";
           }
         },
       });
     } else {
-      modal.style.display = "";
-      overlay.style.display = "";
+      modal.style.display = "none";
+      overlay.style.display = "none";
     }
   };
 
@@ -58,7 +58,7 @@ const modal = (selOpenBtn, selModal, selOverlay, selCloseBtn) => {
         openModal();
       } else if (
         e.target.closest(selCloseBtn) ||
-        (!e.target.closest(selModal) && modal.style.display)
+        (!e.target.closest(selModal) && modal.style.display != "none" && modal.style.display)
       ) {
         e.preventDefault();
         closeModal();
