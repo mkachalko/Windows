@@ -6,6 +6,7 @@ import sendForm from "./modules/sendForm";
 import inputsValidate from "./modules/inputsValidate";
 import modalImage from "./modules/modalImage";
 import smoothScroll from "./modules/scroll";
+import calc from "./modules/calc";
 
 modal('a[href="#callback"]', ".header-modal", ".overlay", ".header-modal__close");
 swiper();
@@ -63,3 +64,4 @@ sendForm({
 modalImage();
 modal(".document-overlay", ".documents-modal", ".overlay", ".documents-modal__close");
 smoothScroll();
+calc();
