@@ -17,8 +17,8 @@ slider({
   timeInterval: 3000,
 });
 modal('a[href="#application"]', ".services-modal", ".overlay", ".services-modal__close");
-timer("23 febryary 2022", "order_1");
-timer("23 febryary 2022", "order_2");
+timer("21 june 2022", "order_1");
+timer("21 june 2022", "order_2");
 
 inputsValidate("application-form1");
 inputsValidate("callback-form2");
